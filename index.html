@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MESCOE</title>
+  
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<style>
+  
+  </style>
+<body>
+
+  
+    <div style="text-align: right;">
+    <a class="fa fa-user btn btn-primary my-2 my-sm-0 " href="login.php" > Admin Login</a>
+  </div>
+    
+  
+
+  <div class="container">
+    <h1 class="brand"><span>MESCOE</span> Contact Form</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>MESCOE</h3>
+        <ul>
+          <li><i class="fav fav-road"></i> Pune, India</li>
+          <li><i class="fa fa-phone"></i> 9890677134</li>
+          <li><i class="fa fa-envelope"></i> mail@mescoepune.org</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Contact Form</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>Name <span style="color: red;">*</span> </label>
+            <input style="border-radius: 5px;" type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Class <span style="color: red;">*</span></label>
+            <input type="text" name="company" style="border-radius: 5px;" id="company" required>
+          </p>
+          <p>
+            <label>Email Address <span style="color: red;">*</span></label>
+            <input type="email" name="email" style="border-radius: 5px;" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number <span style="color: red;">*</span> </label>
+            <input type="text" name="phone" style="border-radius: 5px;" id="phone" required>
+          </p>
+          <p class="full">
+            <label>Feedback / Suggestion / Purpose of Contact <span style="color: red;">*</span> </label>
+            <textarea name="message" rows="5" style="border-radius: 5px;" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button style="background-color: green;" class="btn btn-success" type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
